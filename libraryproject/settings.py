@@ -1,7 +1,7 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -41,7 +41,7 @@ ROOT_URLCONF = 'libraryproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'apps' / 'templates'],  # add this
+        'DIRS': [BASE_DIR / 'apps' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

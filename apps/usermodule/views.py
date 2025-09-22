@@ -1,3 +1,5 @@
 from django.http import HttpResponse
-def home(request):
-    return HttpResponse('users ok')
+
+def index(request):
+    name = request.GET.get("name") or "world!"
+    return HttpResponse("Hello, " + name)
